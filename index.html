@@ -23,14 +23,18 @@
         header {
             background-color: #006233;
             color: white;
-            padding: 20px 0;
-            text-align: center;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        header img {
+            height: 50px;
+            margin-left: 20px;
         }
         nav {
             display: flex;
-            justify-content: center;
-            background-color: #003366;
-            padding: 10px 0;
         }
         nav a {
             color: white;
@@ -68,55 +72,30 @@
         }
         .section h2 {
             color: #006233;
-            margin-bottom: 15px;
         }
-        /* About Section */
         .about img {
             max-width: 100%;
             border-radius: 8px;
             margin-bottom: 15px;
         }
-        /* News Section */
-        .news {
+        .news, .services {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
-        .news-item {
+        .news-item, .service-item {
             width: 300px;
             background: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-        .news-item img {
+        .news-item img, .service-item img {
             width: 100%;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
         }
-        .news-item .content {
+        .news-item .content, .service-item .content {
             padding: 15px;
-        }
-        /* Contact Form */
-        form label {
-            font-weight: bold;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        form button {
-            background-color: #006233;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-        form button:hover {
-            background-color: #004d1a;
         }
         /* Footer */
         footer {
@@ -124,40 +103,33 @@
             color: white;
             text-align: center;
             padding: 15px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>Präsident der Volksrepublik Algerien</h1>
+        <img src="https://via.placeholder.com/150x50" alt="Logo">
+        <nav>
+            <a href="#about">Über</a>
+            <a href="#news">Nachrichten</a>
+            <a href="#services">Dienste</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
     </header>
-
-    <!-- Navigation -->
-    <nav>
-        <a href="#about">Über</a>
-        <a href="#projects">Projekte</a>
-        <a href="#news">Nachrichten</a>
-        <a href="#contact">Kontakt</a>
-    </nav>
 
     <!-- Hero Section -->
     <div class="hero">
         <h1>Willkommen</h1>
-        <p>Erfahren Sie mehr über die Führung und Vision der algerischen Regierung.</p>
+        <p>Offizielle Website des Präsidenten der Volksrepublik Algerien.</p>
     </div>
 
     <!-- About Section -->
     <div id="about" class="section">
         <h2>Über den Präsidenten</h2>
         <img src="https://tse2.mm.bing.net/th?id=OIP.zhA0_VbQCnugVPBo-fw6qAHaE8&pid=Api" alt="Abdelmadjid Tebboune">
-        <p>Abdelmadjid Tebboune ist der aktuelle Präsident von Algerien. Er ist bekannt für seine Reformen und seine Vision für die Zukunft Algeriens.</p>
-    </div>
-
-    <!-- Projects Section -->
-    <div id="projects" class="section">
-        <h2>Wichtige Projekte</h2>
-        <p>Der Präsident hat mehrere Initiativen gestartet, darunter wirtschaftliche Diversifizierung und Korruptionsbekämpfung.</p>
+        <p>Abdelmadjid Tebboune ist der aktuelle Präsident von Algerien, bekannt für Reformen und die Förderung der nationalen Interessen.</p>
     </div>
 
     <!-- News Section -->
@@ -168,7 +140,7 @@
                 <img src="https://via.placeholder.com/300x200" alt="News Image">
                 <div class="content">
                     <h3>Wirtschaftsreform</h3>
-                    <p>Der Präsident kündigt neue Maßnahmen zur Stärkung der Wirtschaft an.</p>
+                    <p>Neue Maßnahmen zur Stärkung der Wirtschaft wurden angekündigt.</p>
                 </div>
             </div>
             <div class="news-item">
@@ -181,18 +153,33 @@
         </div>
     </div>
 
+    <!-- Services Section -->
+    <div id="services" class="section">
+        <h2>Dienste</h2>
+        <div class="services">
+            <div class="service-item">
+                <img src="https://via.placeholder.com/300x200" alt="Service Image">
+                <div class="content">
+                    <h3>Visa-Anträge</h3>
+                    <p>Informationen zu Visa und Arbeitserlaubnis.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <img src="https://via.placeholder.com/300x200" alt="Service Image">
+                <div class="content">
+                    <h3>Ressourcen</h3>
+                    <p>Herunterladbare Formulare und Anleitungen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <div id="contact" class="section">
         <h2>Kontakt</h2>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">E-Mail:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">Nachricht:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-            <button type="submit">Absenden</button>
-        </form>
+        <p>Adresse: 123 Präsidentenstraße, Algier, Algerien</p>
+        <p>Telefon: +213-123-4567</p>
+        <p>E-Mail: kontakt@mfa.gov.dz</p>
     </div>
 
     <!-- Footer -->
