@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Präsident der Volksrepublik Algerien</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -51,38 +50,30 @@
             font-size: 1.2em;
             margin-top: 10px;
         }
-        .content {
+        .about-section {
             padding: 20px;
-            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 10px;
         }
-        .content h2 {
-            font-size: 2em;
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .about-section h2 {
             color: #006233;
         }
-        .card {
-            display: inline-block;
-            width: 300px;
-            margin: 15px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .card img {
-            width: 100%;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-        .card .content {
-            padding: 15px;
+        .about-section p {
+            line-height: 1.6;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 15px 0;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -93,7 +84,7 @@
     </header>
     <nav>
         <a href="#start">Startseite</a>
-        <a href="#about">Über uns</a>
+        <a href="#about">Über den Präsidenten</a>
         <a href="#projects">Projekte</a>
         <a href="#contact">Kontakt</a>
     </nav>
@@ -101,22 +92,14 @@
         <h2>Willkommen auf der offiziellen Website</h2>
         <p>Bleiben Sie informiert über die neuesten Entwicklungen unserer Nation.</p>
     </div>
-    <div class="content" id="about">
-        <h2>Aktuelle Projekte</h2>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Projektbild">
-            <div class="content">
-                <h3>Projekt 1</h3>
-                <p>Beschreibung des ersten Projekts, das für die Entwicklung Algeriens von großer Bedeutung ist.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Projektbild">
-            <div class="content">
-                <h3>Projekt 2</h3>
-                <p>Ein weiteres beeindruckendes Projekt, das den Fortschritt fördert.</p>
-            </div>
-        </div>
+    <div id="about" class="about-section">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.zhA0_VbQCnugVPBo-fw6qAHaE8&pid=Api" alt="Abdelmadjid Tebboune">
+        <h2>Über Präsident Abdelmadjid Tebboune</h2>
+        <p><strong>Geburtsdatum:</strong> 17. November 1945</p>
+        <p>Abdelmadjid Tebboune ist der aktuelle Präsident von Algerien. Er wurde erstmals im Dezember 2019 gewählt und 2024 für eine zweite Amtszeit mit 84,30 % der Stimmen wiedergewählt.</p>
+        <p><strong>Politische Karriere:</strong> Tebboune diente 2017 als Premierminister und konzentrierte sich auf Wirtschaftsreformen und Korruptionsbekämpfung. Seine Präsidentschaft legt den Schwerpunkt auf wirtschaftliche Diversifizierung, Anti-Korruption und regionale Diplomatie.</p>
+        <p><strong>Herausforderungen:</strong> Er führt Algerien durch wirtschaftliche und politische Reformen, während er sich mit den Forderungen der Hirak-Bewegung nach mehr Transparenz auseinandersetzt.</p>
+        <p>Trotz der Herausforderungen wird Tebboune als pragmatisch und reformorientiert angesehen.</p>
     </div>
     <footer>
         <p>&copy; 2024 Volksrepublik Algerien - Alle Rechte vorbehalten.</p>
