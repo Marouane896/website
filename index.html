@@ -37,37 +37,51 @@
         }
         .hero {
             text-align: center;
-            background: url('https://via.placeholder.com/1920x500') no-repeat center;
+            background: url('./background.jpg') no-repeat center;
             background-size: cover;
             color: white;
             padding: 80px 20px;
         }
-        .hero h2 {
-            font-size: 2.5em;
+        .hero h1 {
+            font-size: 3em;
             margin: 0;
         }
         .hero p {
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin-top: 10px;
         }
-        .about-section {
+        .section {
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 20px;
-            border-radius: 10px;
-        }
-        .about-section img {
-            max-width: 100%;
-            height: auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            margin-bottom: 15px;
         }
-        .about-section h2 {
+        .section h2 {
             color: #006233;
         }
-        .about-section p {
-            line-height: 1.6;
+        .about img, .news img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .news {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .news-item {
+            width: 300px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .news-item img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .news-item .content {
+            padding: 15px;
         }
         footer {
             background-color: #333;
@@ -80,26 +94,56 @@
 <body>
     <header>
         <h1>Präsident der Volksrepublik Algerien</h1>
-        <p>„Eine starke Nation durch Einheit und Fortschritt“</p>
     </header>
     <nav>
-        <a href="#start">Startseite</a>
-        <a href="#about">Über den Präsidenten</a>
+        <a href="#about">Über</a>
         <a href="#projects">Projekte</a>
+        <a href="#news">Nachrichten</a>
         <a href="#contact">Kontakt</a>
     </nav>
     <div class="hero">
-        <h2>Willkommen auf der offiziellen Website</h2>
-        <p>Bleiben Sie informiert über die neuesten Entwicklungen unserer Nation.</p>
+        <h1>Willkommen</h1>
+        <p>Erfahren Sie mehr über die Führung und Vision der algerischen Regierung.</p>
     </div>
-    <div id="about" class="about-section">
+    <div id="about" class="section">
+        <h2>Über den Präsidenten</h2>
         <img src="https://tse2.mm.bing.net/th?id=OIP.zhA0_VbQCnugVPBo-fw6qAHaE8&pid=Api" alt="Abdelmadjid Tebboune">
-        <h2>Über Präsident Abdelmadjid Tebboune</h2>
-        <p><strong>Geburtsdatum:</strong> 17. November 1945</p>
-        <p>Abdelmadjid Tebboune ist der aktuelle Präsident von Algerien. Er wurde erstmals im Dezember 2019 gewählt und 2024 für eine zweite Amtszeit mit 84,30 % der Stimmen wiedergewählt.</p>
-        <p><strong>Politische Karriere:</strong> Tebboune diente 2017 als Premierminister und konzentrierte sich auf Wirtschaftsreformen und Korruptionsbekämpfung. Seine Präsidentschaft legt den Schwerpunkt auf wirtschaftliche Diversifizierung, Anti-Korruption und regionale Diplomatie.</p>
-        <p><strong>Herausforderungen:</strong> Er führt Algerien durch wirtschaftliche und politische Reformen, während er sich mit den Forderungen der Hirak-Bewegung nach mehr Transparenz auseinandersetzt.</p>
-        <p>Trotz der Herausforderungen wird Tebboune als pragmatisch und reformorientiert angesehen.</p>
+        <p>Abdelmadjid Tebboune ist der aktuelle Präsident von Algerien. Er ist bekannt für seine Reformen und seine Vision für die Zukunft Algeriens.</p>
+    </div>
+    <div id="projects" class="section">
+        <h2>Wichtige Projekte</h2>
+        <p>Der Präsident hat mehrere Initiativen gestartet, darunter wirtschaftliche Diversifizierung und Korruptionsbekämpfung.</p>
+    </div>
+    <div id="news" class="section">
+        <h2>Neuigkeiten</h2>
+        <div class="news">
+            <div class="news-item">
+                <img src="https://via.placeholder.com/300x200" alt="News Image">
+                <div class="content">
+                    <h3>Wirtschaftsreform</h3>
+                    <p>Der Präsident kündigt neue Maßnahmen zur Stärkung der Wirtschaft an.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="https://via.placeholder.com/300x200" alt="News Image">
+                <div class="content">
+                    <h3>Diplomatische Beziehungen</h3>
+                    <p>Treffen mit Staatsoberhäuptern zur Verbesserung internationaler Beziehungen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">E-Mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Nachricht:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Absenden</button>
+        </form>
     </div>
     <footer>
         <p>&copy; 2024 Volksrepublik Algerien - Alle Rechte vorbehalten.</p>
