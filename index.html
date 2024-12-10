@@ -1,27 +1,127 @@
-<!-- Header -->
-<header style="background-color: #004d1a; color: white; padding: 15px 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: auto; padding: 0 20px;">
-        <div style="display: flex; align-items: center;">
-            <img src="https://via.placeholder.com/80x80" alt="Algerian Emblem" style="height: 60px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-            <h1 style="font-size: 1.8em; margin: 0; color: #f0f0f0;">Volksrepublik Algerien</h1>
-        </div>
-        <nav style="display: flex; gap: 20px;">
-            <a href="#about" style="color: #f0f0f0; text-decoration: none; font-size: 1em; font-weight: bold; transition: color 0.3s;">Über</a>
-            <a href="#news" style="color: #f0f0f0; text-decoration: none; font-size: 1em; font-weight: bold; transition: color 0.3s;">Nachrichten</a>
-            <a href="#services" style="color: #f0f0f0; text-decoration: none; font-size: 1em; font-weight: bold; transition: color 0.3s;">Dienste</a>
-            <a href="#contact" style="color: #f0f0f0; text-decoration: none; font-size: 1em; font-weight: bold; transition: color 0.3s;">Kontakt</a>
-        </nav>
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Präsident der Volksrepublik Algerien</title>
 
-<!-- Hero Section -->
-<div class="hero" style="text-align: center; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x500') no-repeat center; background-size: cover; color: white; padding: 100px 20px;">
-    <h1 style="font-size: 3.5em; margin: 0; color: #f0e68c;">Willkommen</h1>
-    <p style="font-size: 1.5em; margin: 15px 0 0; color: #dcdcdc;">Die offizielle Website des Präsidenten der Volksrepublik Algerien.</p>
-    <div style="margin-top: 30px;">
-        <a href="#about" style="background-color: #f0e68c; color: #004d1a; text-decoration: none; padding: 15px 30px; font-size: 1em; font-weight: bold; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, box-shadow 0.3s;">Erfahren Sie mehr</a>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        /* Header Styles */
+        header {
+            background-color: #004d1a;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        header img {
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #f0f0f0;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f0e68c;
+        }
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x500') no-repeat center;
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #f0e68c;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 15px 0 0;
+            color: #dcdcdc;
+        }
+        .hero a {
+            background-color: #f0e68c;
+            color: #004d1a;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            margin-top: 30px;
+        }
+        .hero a:hover {
+            background-color: #ffd700;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <div style="display: flex; align-items: center;">
+                <img src="https://via.placeholder.com/80x80" alt="Algerian Emblem">
+                <h1>Volksrepublik Algerien</h1>
+            </div>
+            <nav>
+                <a href="#about">Über</a>
+                <a href="#news">Nachrichten</a>
+                <a href="#services">Dienste</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Willkommen</h1>
+        <p>Die offizielle Website des Präsidenten der Volksrepublik Algerien.</p>
+        <a href="#about">Erfahren Sie mehr</a>
     </div>
-</div>
+</body>
+</html>
+
 
 
     <!-- Vision Section -->
