@@ -94,6 +94,44 @@
             background-color: #ffd700;
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
         }
+        /* Section Styles */
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #004d1a;
+        }
+        .news, .services ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .news-item, .services li {
+            width: calc(50% - 15px);
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .news-item img, .services img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .news-item h3, .services li h3 {
+            color: #004d1a;
+            margin: 10px 0 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
     </style>
 </head>
 <body>
@@ -119,67 +157,28 @@
         <p>Die offizielle Website des Präsidenten der Volksrepublik Algerien.</p>
         <a href="#about">Erfahren Sie mehr</a>
     </div>
-</body>
-</html>
-
-
 
     <!-- Vision Section -->
     <div id="vision" class="section">
         <h2>Vision und Mission</h2>
         <p>Die Regierung der Volksrepublik Algerien strebt eine Nation an, die auf den Prinzipien von Gerechtigkeit, Fortschritt und internationaler Zusammenarbeit aufgebaut ist. Unsere Mission ist es, die Interessen unserer Bürgerinnen und Bürger zu schützen und gleichzeitig eine führende Rolle in der Region und der Welt zu spielen.</p>
-        <p>Durch nachhaltige Entwicklungen, den Schutz der nationalen Souveränität und die Förderung des Wohlstands für alle, streben wir eine bessere Zukunft für kommende Generationen an.</p>
     </div>
 
-<!-- News Section -->
-<div id="news" class="section">
-    <h2>Neuigkeiten</h2>
-    <div class="news">
-        <!-- News Item 1: Wirtschaftsreform -->
-        <div class="news-item">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.-ZIM3ePmpGOrsHnpUG811QHaEq&pid=Api" alt="Wirtschaftsreform">
-            <div class="content">
+    <!-- News Section -->
+    <div id="news" class="section">
+        <h2>Neuigkeiten</h2>
+        <div class="news">
+            <div class="news-item">
+                <img src="https://via.placeholder.com/300x200" alt="Wirtschaftsreform">
                 <h3>Wirtschaftsreform</h3>
-                <p>Neue Maßnahmen zur Förderung des Handels und der Investitionen wurden umgesetzt. Präsident Tebboune kündigte ein umfassendes Reformpaket an, das darauf abzielt, die algerische Wirtschaft für internationale Investitionen attraktiver zu machen. Zu den wichtigsten Änderungen gehören Steuererleichterungen für Startups, vereinfachte Handelsgesetze und eine stärkere Förderung von Industriezweigen außerhalb des Energiesektors.</p>
-                <p>„Diese Reformen werden uns helfen, wirtschaftliche Stabilität zu erreichen und Arbeitsplätze für die nächste Generation zu schaffen,“ erklärte der Präsident in einer Pressekonferenz. Internationale Beobachter lobten den Schritt, während lokale Unternehmer vorsichtige Begeisterung zeigten.</p>
+                <p>Neue Maßnahmen zur Förderung des Handels und der Investitionen wurden umgesetzt.</p>
             </div>
-        </div>
-
-        <!-- News Item 2: Diplomatische Beziehungen -->
-        <div class="news-item">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.zhA0_VbQCnugVPBo-fw6qAHaE8&pid=Api" alt="Diplomatische Beziehungen">
-            <div class="content">
+            <div class="news-item">
+                <img src="https://via.placeholder.com/300x200" alt="Diplomatische Beziehungen">
                 <h3>Diplomatische Beziehungen</h3>
-                <p>Der Präsident begrüßte Delegationen aus Nachbarländern, um die Zusammenarbeit zu stärken. Bei einem Gipfeltreffen in Algier unterstrich Präsident Tebboune die Bedeutung der regionalen Partnerschaften für Stabilität und wirtschaftliche Entwicklung. Themen wie der Ausbau von Handelswegen, gemeinsame Sicherheitsstrategien und kulturelle Kooperationen standen im Mittelpunkt der Gespräche.</p>
-                <p>Ein besonderes Augenmerk lag auf den Beziehungen zu Tunesien und Marokko, wobei der Präsident betonte: „Nur durch Zusammenarbeit können wir die Herausforderungen unserer Region bewältigen.“ Die Delegationen einigten sich darauf, regelmäßigere Treffen abzuhalten und gemeinsame Projekte in Bereichen wie Infrastruktur und erneuerbare Energien zu starten.</p>
+                <p>Der Präsident begrüßte Delegationen aus Nachbarländern, um die Zusammenarbeit zu stärken.</p>
             </div>
         </div>
-    </div>
-</div>
-        <!-- Fake News: 90-Year-Old Minister -->
-        <div class="news-item">
-            <img src="https://shorturl.at/5xP9Z" alt="90-jähriger Wirtschaftsminister">
-            <div class="content">
-                <h3>90-jähriger Wirtschaftsminister sorgt für Aufsehen</h3>
-                <p>Präsident Abdelmadjid Tebboune hat mit der Ernennung des 90-jährigen Dr. Omar Belkacem zum neuen Wirtschaftsminister weltweit für Schlagzeilen gesorgt. Dr. Belkacem, der für seine jahrzehntelange Erfahrung in der algerischen Wirtschaft bekannt ist, wird die strategische Führung der wirtschaftlichen Reformen übernehmen.</p>
-                <p>„Er bringt eine Weisheit und Erfahrung mit, die ihresgleichen sucht. Seine Analysen sind so scharf wie in seinen besten Jahren,“ sagte der Präsident bei der Amtseinführung. Belkacem selbst äußerte: „Ich sehe mein Alter nicht als Hindernis, sondern als Vorteil. Ich habe die wirtschaftliche Geschichte Algeriens miterlebt und kann wertvolle Perspektiven bieten.“</p>
-                <p>Während viele die Ernennung als einen klugen Schachzug loben, um Stabilität und Expertise in einer kritischen Zeit sicherzustellen, äußerten Kritiker Bedenken hinsichtlich seiner körperlichen Fitness und Anpassungsfähigkeit an die sich schnell wandelnde Weltwirtschaft.</p>
-                <p>Interessanterweise hat Belkacem angekündigt, dass er auf modernste Technologie setzt, um die Wirtschaft zu digitalisieren. „Ich mag alt sein, aber ich habe TikTok auf meinem Smartphone,“ scherzte er während seiner Rede.</p>
-                <p>Die internationale Gemeinschaft beobachtet mit großem Interesse, wie Algerien unter der Leitung dieses ungewöhnlich erfahrenen Ministers seine wirtschaftlichen Herausforderungen angehen wird.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <!-- Services Section -->
-    <div id="services" class="section">
-        <h2>Dienste</h2>
-        <p>Die Regierung bietet eine Reihe von Dienstleistungen für Bürger und internationale Partner an, darunter:</p>
-        <ul>
-            <li>Informationen und Anleitungen zu Visa und Arbeitserlaubnissen</li>
-            <li>Herunterladbare Ressourcen wie Formulare und Anträge</li>
-            <li>Unterstützung für ausländische Unternehmen, die in Algerien investieren möchten</li>
-        </ul>
     </div>
 
     <!-- Contact Section -->
