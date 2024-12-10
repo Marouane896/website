@@ -1,137 +1,28 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <!-- Metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Präsident der Volksrepublik Algerien</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <style>
-        /* Global Styles */
-        body {
-            font-family: "Roboto", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        /* Header and Navigation */
-        header {
-            background-color: #006233;
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header img {
-            height: 50px;
-            margin-left: 20px;
-        }
-        nav {
-            display: flex;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            background: url('https://tse1.mm.bing.net/th?id=OIP.7bhWGMGz-E_QqGgjbrij0gHaHa&pid=Api') no-repeat center;
-            background-size: cover;
-            color: white;
-            padding: 80px 20px;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .hero p {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-        /* Section Styles */
-        .section {
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .section h2 {
-            color: #006233;
-        }
-        .about img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        .news, .services {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        .news-item, .service-item {
-            width: 300px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .news-item img, .service-item img {
-            width: 100%;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-        .news-item .content, .service-item .content {
-            padding: 15px;
-        }
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <img src="https://tse1.mm.bing.net/th?id=OIP.7bhWGMGz-E_QqGgjbrij0gHaHa&pid=Api" alt="Algerian Emblem">
-        <nav>
-            <a href="#about">Über</a>
-            <a href="#vision">Vision</a>
-            <a href="#news">Nachrichten</a>
-            <a href="#services">Dienste</a>
-            <a href="#contact">Kontakt</a>
+<!-- Header -->
+<header style="background-color: #004d1a; color: white; padding: 15px 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: auto; padding: 0 20px;">
+        <div style="display: flex; align-items: center;">
+            <img src="https://via.placeholder.com/80x80" alt="Algerian Emblem" style="height: 60px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
+            <h1 style="font-size: 1.8em; margin: 0; color: #f0f0f0;">Volksrepublik Algerien</h1>
+        </div>
+        <nav style="display: flex; gap: 20px;">
+            <a href="#about" style="color: #f0f0f0; text-decoration: none; font-size: 1em; font-weight: bold; transition: color 0.3s;">Über</a>
+            <a href="#news" style="color: #f0f0f0; text-decoration: none; font-size: 1em; font-weight: bold; transition: color 0.3s;">Nachrichten</a>
+            <a href="#services" style="color: #f0f0f0; text-decoration: none; font-size: 1em; font-weight: bold; transition: color 0.3s;">Dienste</a>
+            <a href="#contact" style="color: #f0f0f0; text-decoration: none; font-size: 1em; font-weight: bold; transition: color 0.3s;">Kontakt</a>
         </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Willkommen</h1>
-        <p>Offizielle Website des Präsidenten der Volksrepublik Algerien.</p>
     </div>
+</header>
 
-    <!-- About Section -->
-    <div id="about" class="section">
-        <h2>Über den Präsidenten</h2>
-        <img src="https://tse4.mm.bing.net/th?id=OIP.FRl8M-YjX1Zl1U2fL5wq_AHaHa&pid=Api" alt="Abdelmadjid Tebboune">
-        <p>Abdelmadjid Tebboune, geboren am 17. November 1945, ist seit Dezember 2019 Präsident der Volksrepublik Algerien. Mit seiner langjährigen Erfahrung in der Verwaltung und seiner Vision für eine moderne und starke Nation hat er sich dem wirtschaftlichen Fortschritt und der sozialen Entwicklung Algeriens verschrieben.</p>
-        <p>Unter seiner Führung hat Algerien bedeutende Fortschritte in der Bekämpfung von Korruption, der Förderung wirtschaftlicher Diversifizierung und der Stärkung internationaler Beziehungen gemacht.</p>
+<!-- Hero Section -->
+<div class="hero" style="text-align: center; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x500') no-repeat center; background-size: cover; color: white; padding: 100px 20px;">
+    <h1 style="font-size: 3.5em; margin: 0; color: #f0e68c;">Willkommen</h1>
+    <p style="font-size: 1.5em; margin: 15px 0 0; color: #dcdcdc;">Die offizielle Website des Präsidenten der Volksrepublik Algerien.</p>
+    <div style="margin-top: 30px;">
+        <a href="#about" style="background-color: #f0e68c; color: #004d1a; text-decoration: none; padding: 15px 30px; font-size: 1em; font-weight: bold; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, box-shadow 0.3s;">Erfahren Sie mehr</a>
     </div>
+</div>
+
 
     <!-- Vision Section -->
     <div id="vision" class="section">
@@ -140,42 +31,6 @@
         <p>Durch nachhaltige Entwicklungen, den Schutz der nationalen Souveränität und die Förderung des Wohlstands für alle, streben wir eine bessere Zukunft für kommende Generationen an.</p>
     </div>
 
-<!-- News Section -->
-<div id="news" class="section">
-    <h2>Neuigkeiten</h2>
-    <div class="news">
-        <div class="news-item">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.-ZIM3ePmpGOrsHnpUG811QHaEq&pid=Api" alt="Wirtschaftsreform">
-            <div class="content">
-                <h3>Wirtschaftsreform</h3>
-                <p>Neue Maßnahmen zur Förderung des Handels und der Investitionen wurden umgesetzt.</p>
-            </div>
-        </div>
-        <div class="news-item">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.zhA0_VbQCnugVPBo-fw6qAHaE8&pid=Api" alt="Diplomatische Beziehungen">
-            <div class="content">
-                <h3>Diplomatische Beziehungen</h3>
-                <p>Der Präsident begrüßte Delegationen aus Nachbarländern, um die Zusammenarbeit zu stärken.</p>
-            </div>
-        </div>
-<!-- News Section -->
-<div id="news" class="section">
-    <h2>Neuigkeiten</h2>
-    <div class="news">
-        <div class="news-item">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.-ZIM3ePmpGOrsHnpUG811QHaEq&pid=Api" alt="Wirtschaftsreform">
-            <div class="content">
-                <h3>Wirtschaftsreform</h3>
-                <p>Neue Maßnahmen zur Förderung des Handels und der Investitionen wurden umgesetzt.</p>
-            </div>
-        </div>
-        <div class="news-item">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.zhA0_VbQCnugVPBo-fw6qAHaE8&pid=Api" alt="Diplomatische Beziehungen">
-            <div class="content">
-                <h3>Diplomatische Beziehungen</h3>
-                <p>Der Präsident begrüßte Delegationen aus Nachbarländern, um die Zusammenarbeit zu stärken.</p>
-            </div>
-        </div>
 <!-- News Section -->
 <div id="news" class="section">
     <h2>Neuigkeiten</h2>
